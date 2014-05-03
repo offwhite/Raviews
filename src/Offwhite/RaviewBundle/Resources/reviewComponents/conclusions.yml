@@ -1,0 +1,62 @@
+
+# a roundup of the movie as a whole
+# anticipation before the movie - the marketing machine and buildup
+# how successful the movie was
+# how it left me
+# what could have been better
+
+conclusions-good:
+    0: "{conclusion-anticipation_101} {conclusion-success-good_101}"
+
+conclusions-poor:
+    0: "{conclusion-anticipation_101} {conclusion-success-poor_101}"
+
+conclusion-anticipation:
+    0: "There was a good deal of anticipation leading up to the release of {title}, you couldn't walk down the street without seeing {actor_01}'s face on a billboard."
+    1: "There {was-wasnt_222} the regular burble of marketing for {title}, there {was-wasnt_222} a load of posters, adverts, billboards everywhere you looked."
+    2: "I had heard so much about the film before it was released I {was-wasnt_222} very interested to see it."
+    3: "I hadn't really heard much about this movie before the premier, so had no expectations."
+    4: "My expectations for {title} was low before it was released."
+    5: "Because of the rather odd marketing campaign, I wasn't sure what to make of {title} before it's release."
+    6: "A {adjectives-complicated_222} marketing campaign left me with mixed feelings before going in to see {title}."
+    7: "It seemed everyone was talking about {title} before it's release, and I rarely respond well to hype."
+    8: "There {was-wasnt_112} a lot of expectation surrounding the release of this movie."
+    9: "I was expecting this movie to be {adjectives-poor_201}, the posters certainly were."
+    10: "I {was-wasnt_123} expecting much from {director} before the movie was previewed..."
+    11: "I have been let down by {director} before so my hopes were low for {title}..."
+    12: "{director} has such a strong portfolio that the expectations were high for {title}."
+    13: "I was almost physically excited by the time {title} was previewed."
+    14: "{title} seemed to come from nowhere, there was almost no buzz surounding it which oddly perked my interest."
+    15: "I was strangely interested to see this movie after hearing all the romours surrounding it."
+    16: "I had heard such mixed reviews before I saw this movie I wasn't sure what to expect."
+    17: "I have really liked {director}'s work in the past and really wanted to like {title}."
+    18: "I've never really got onboard with {director} in the past, but I tried going into this movie with an open mind."
+    19: "Everyone had high hopes for this movie even before it was in production."
+    20: "" # allow for no anticipation
+
+conclusion-success-poor:
+    0: "Never-the-less, I still feel let down. It was all a bit sloppy and was trying to be much more than it really had any hope to be."
+    1: "When it came to it, I didn't enjoy this movie anywhere near as much as i should have. It wasn't completely {adjectives-poor_301}, but it wasn't good enough."
+    2: "In the end, while some of the themes in {title} are interesting, I don't think it quite has enough to pull it off."
+    3: "But aside from the elements that worked, I don't think they're enough to make a good movie."
+    4: "But when it came to it a {adjectives-middling_203} screenplay wasn't helped by an even more {adjectives-middling_203} production."
+    5: "While I actually wanted to really like this movie at times, there just isn't enough there to hold my attention."
+    6: "In the end I think there were some parts of {title} that worked so well they just made the rest look worse than they actually were."
+    7: "However I must admit to liking the outcome much more than I think it deserves. There are problems with the movie of course, but I couldn't help myself, I just liked it."
+    8: "Having said that, while I admire some of the movie there were too many sloppy areas for me to really like it."
+    9: "When it came to it however, I enjoyed the movie much more while I was watching it than retrospectively. I feel a little let down when i think back on it."
+    10: "I must say I was generally dissapointed, the few strong points for this movie weren't strong enough."
+    11: "After watching the movie however I was a little dissapointed. Too few strong points, too many flaws."
+
+conclusion-success-good:
+    0: "And I must say that I was actually impressed with what was achieved."
+    1: "Aside from some minor problems with this movie, I can't help but like some of it very much."
+    2: "Not everything about {title} works for me, but when it does work, it works quite well indeed. It's good to see at least a little elegance on the big screen."
+    3: "I think there are degrees of success to be found here, with some elements working very well, and some not working at all. It was very close to being something."
+    4: "After the slightly unusual lead up to watching this movie I was impressed with what I saw, regardless of the flaws."
+    5: "Having said that, and finding a few flaws in the movie, I actually really liked it."
+    6: "After all that though, I was surprised at how much of this movie worked. I wouldn't call it a success, but it wasn't a total failure either."
+    7: "As it turned out I was quite surprised by what {director} had done, some of it worked really well, some of it didn't. I'd call it a mixed bag."
+    8: "Having said that I think there were parts of the film that worked really well... and parts that really didn't. {director} shows talent, but I'm not sure it's enough."
+    9: "But I have to admit that I enjoyed this movie much more than even I was expecting. It was far from perfect, but it was quite fun."
+    10: "{conclusion-success-poor_101}" # once in a while throw a poor one into a good review

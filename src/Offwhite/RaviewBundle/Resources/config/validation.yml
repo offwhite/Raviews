@@ -1,0 +1,10 @@
+
+
+Offwhite\RaviewBundle\Entity\Movie:
+    properties:
+        title:
+            - NotBlank:
+                message: "Please enter the name of a movie..."
+            - Length:
+                min: 2
+                minMessage: "That's not a real movie is it? Movie titles are not {{ limit }} characters long."

@@ -1,0 +1,61 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <article class="row movieRow">
+        <p class="resultNumber">1</p>
+        <div class="back backColor scDown"></div>
+        <div class="tail frontColor"><div class="tailShadow scOffset"></div></div>
+
+        <div class="title frontColor scDown ease">
+            <h3 title="{{ movie.title }}">
+                {{ movie.title[:37] }}
+                {% if movie.title|length > 37 %}
+                    ...
+                {% endif %}
+                {% if movie.year is not null %}
+                    ({{ movie.year }})
+                {% endif %}
+            </h3>
+            <div class="titleArrow frontColor"></div>
+        </div>
+
+        <image class="moviePoster" width=165 src="http://image.tmdb.org/t/p/w300{{ movie.imagePoster }}" />
+
+        <p class="content">
+            {{ movie.raview|raw }}
+        </p>
+        <div class="content">
+            <div class="details">
+                <div class="label">Tagline: </div>
+                <div class="detail">{{ movie.tagline }}</div>
+            </div>
+            <div class="details">
+                <div class="label">Director: </div>
+                <div class="detail">{{ movie.director }}</div>
+            </div>
+            <div class="details">
+                <div class="label">Runtime: </div>
+                <div class="detail">{{ movie.runtime }} minutes</div>
+            </div>
+            {% if movie.imdbId|length > 7 %}
+                <div class="details">
+                    <div class="label">IMDB: </div>
+                    <div class="detail"><a target="_blank" href="http://www.imdb.com/title/{{ movie.imdbId }}/">www.imdb.com/title/{{ movie.imdbid }}</a></div>
+                </div>
+            {% endif %}
+            <div class="details">
+                <div class="label">Cast: </div>
+                <div class="detail">
+                {% for cast in movie.cast %}
+                    {{ cast }}<br />
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="ribbon frontColor scDown">
+            <p title="Meta Score - percentage of goodness">{{ movie.rating }}%</p>
+        </div>
+    </article>
+
+
+{% endblock %}

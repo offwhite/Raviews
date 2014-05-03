@@ -1,0 +1,7 @@
+offwhite_raview_generatorPreview:
+    pattern:  /preview/{movieId}/{foundationId}
+    defaults: { _controller: OffwhiteRaviewBundle:Preview:show }
+    requirements:
+            _method:  GET
+            movieId: \d+
+            foundationId: \d+

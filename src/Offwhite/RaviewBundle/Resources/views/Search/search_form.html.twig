@@ -1,0 +1,8 @@
+<form action="{{ path('offwhite_raview_searchResults' ) }}" method="post" {{ form_enctype(form) }} id="searchForm">
+
+    {{ form_row(form.title, { 'attr': {'placeholder': 'Search', 'class': 'searchField scFlat'}} ) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Search" class="searchButton scFlat" />
+</form>

@@ -1,0 +1,52 @@
+
+# cast members with outstanding performance
+# characters that did stuff out of character
+# cast members that did-didn't work well together | clearly friction between, either sexual or aggressive or possibly both
+# inconsistent characters
+# totally unbelievable performance from...
+# casting process
+
+cast-reviews-good:
+    0: "{cast-overview-good_101} {cast-good_101}"
+
+cast-reviews-poor:
+    0: "{cast-overview-poor_101} {cast-poor_101}"
+
+cast-overview-good:
+    0: "Some of the cast was perfect for this movie, they were well chosen and well workshopped."
+    1: "The casting director had a good eye when it came to most of the leads, but less so for the more minor characters."
+    2: "While I was sceptical of some of the casting choices initially, I was convinced by the end of the movie."
+    3: "I thought much of the cast delivered a strong performance throughout the movie."
+    4: "A well chosen cast delivered everything the director could have hoped for."
+    5: "The director must have been pleased with the casting process at least."
+
+cast-good:
+    0: "{actor_01}'s performance stood out for me as particularly strong, a very traditional screen presence."
+    1: "{actor_01} was particularly strong in the later scenes, delivering a captivating {character_01}."
+    2: "{actor_02} as {character_02} was a vivid performance, I will keep my eye on them from now on."
+    3: "{actor_01}'s performance was really compelling in the opening scenes, I would have liked to see it continue."
+    4: "{character_02} was a much stronger character than they had any right to be, mostly due to {actor_02}'s performance."
+    5: "{actor_01} delivered a solid performance as {character_01}, I was thoroughly engrossed by the character."
+    6: "{actor_03} made a surprisingly good {character_03}, I was impressed the the bredth of the performance."
+    7: "I wasn't expecting such a strong performance from {actor_02}, but I was pleasantly surprised for much of the movie."
+
+cast-overview-poor:
+    0: "The casting was {adjectives-poor_233} in some cases."
+    1: "Some of the casting choices weren't {adjectives-good_233} to be honest."
+    2: "If I'm honest, some of the casting choices weren't entirely successful."
+    3: "There were some... interesting choices when it came to the cast."
+    4: "I didn't entirely agree with some of the casting choices."
+    5: "Some of the cast weren't entirely suited to their respective roles."
+    6: "There were some {adjectives-mistake_233} by the casting director."
+    7: "I didn't think some of the cast were quite up to their respective roles."
+    8: "I thought some of the cast weren't quite right for their roles."
+    9: "Some of the cast let the production down a little."
+
+cast-poor:
+   0: "{actor_03}'s appearance on screen was joined by an almost audible sigh from everyone in the cinema."
+   1: "{actor_04} particularly had a terrible habit of ruining a scene."
+   2: "I particularly wasn't convinced by {actor_05} playing {character_05}."
+   3: "I suspect {character_03} was supposed to be a much stronger character than they eventually appeared to be."
+   4: "{actor_03}'s delivery was noticably poor throughout the movie."
+   5: "Most noticably was {actor_04} having a horrible habit of ruining a scene. See the {director-review-scene_103} for an example."
+   6: "I used to like {actor_03}, but I'm much less certain after this. {character_03} was such a let down after the {director-review-scene_103}."

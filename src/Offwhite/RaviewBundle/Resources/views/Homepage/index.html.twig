@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <article class="row movieRow">
+        <p class="resultNumber">0</p>
+        <div class="back backColor scDown"></div>
+        <div class="tail frontColor"><div class="tailShadow scOffset"></div></div>
+
+        <div class="title frontColor scDown ease">
+            <h3>Hello</h3>
+        </div>
+
+        <p class="content">
+            Here you will find movie reviews that are totally random
+            and should in no way be taken as a reflection of the movie
+            in question.<br />
+            Here's an example:
+        </p>
+
+        <div class="ribbon frontColor scDown"></div>
+    </article>
+
+
+
+
+    <article class="row homeRow">
+        <p class="resultNumber">1</p>
+        <div class="back backColor scDown"></div>
+        <div class="tail frontColor ease"><div class="tailShadow scOffset"></div></div>
+
+        <a href="{{ path('offwhite_raview_movie', { 'id': randomMovie.id , 'slug': randomMovie.slug } ) }}" class="title frontColor scDown ease">
+            <h3 title="{{ randomMovie.title }}">
+                {{ randomMovie.title[:37] }}
+                {% if randomMovie.title|length > 37 %}
+                    ...
+                {% endif %}
+            </h3>
+            <div class="titleArrow frontColor"></div>
+        </a>
+
+        <image class="moviePoster" width=165 src="http://image.tmdb.org/t/p/w300{{ randomMovie.imagePoster }}" />
+
+        <p class="content">
+            {{ randomMovie.raview }}
+        </p>
+
+        <div class="ribbon frontColor scDown">
+            <p title="Meta Score - percentage of goodness">{{ randomMovie.rating }}</p>
+        </div>
+    </article>
+{% endblock %}

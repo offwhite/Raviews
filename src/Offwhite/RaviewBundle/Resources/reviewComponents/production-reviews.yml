@@ -1,0 +1,63 @@
+
+# this section will discuss the production - sound, lighting, scenes and props, continuity
+
+production-reviews:
+    0: "{props-reviews} {sound-review}."
+    1: "{production-delays} {props-reviews}, {sound-review}."
+    2: "{props-reviews}"
+    3: "{production-delays} {props-reviews}."
+
+
+# TODO: expand this section
+props-reviews:
+    0: "{director} clearly struggled with getting hold of a decent wardrobe, resorting to off the shelf stuff"
+    1: "The budget clearly {did-didnt} extend to believable props however"
+    2: "The set dressing was {adjectives-middling_112} throughout the movie which even {actor_03}'s performance couldn't draw attention from"
+    3: "I must admit the sets were {adjectives-good_112}, as were the outfits {director} insisted upon"
+    4: "I {was-wasnt} impressed with the overall design of the movie"
+    5: "I was also conscious of the slightly odd wardrobe"
+    6: "A {adjectives-good_120} prop designer makes a noticable difference"
+
+# this needs more
+sound-review:
+    0: "though the sound engineers were apparently trying to be {adjectives_112}{overall-production_201}"
+    1: "and the sound engineers {did-didnt_123} produce a {adjectives_123} job{overall-production_201}"
+    2: "and the sound-scape {was-wasnt} {adjectives_123}{overall-production_201}"
+    3: "even though the sound design {was-wasnt_123} {adjectives_123}{overall-production_201}"
+    4: "while I thought the sound design was moving and {adjectives-good_201}"
+    5: "while the sound design helped to make a huge difference"
+    6: "even as the sound-scape was {adjectives-complicated_103} and thoughtful"
+
+did-didnt-work:
+    0: "which {did-didnt_133} work for me"
+    1: "which mostly {did-didnt_133} work me"
+    2: "which had a {adjectives-middling_123} effect"
+    3: ""
+    4: ""
+
+overall-production:
+    0: ", but it all seemed to work together in a surprising way"
+    1: ", amazingly it all seemed to come together"
+    2: ", but in strange way it kind of worked"
+    3: " it just made the whole thing fall apart"
+    4: " which just added to the feeling of a messy production"
+    5: ""
+
+production-delays:
+    0: "The production was dogged by delays, with everything from writers strikes to deaths on set, {production-delays-overcome}."
+    1: "There were a number of deaths on set that caused the production to be delayed, {production-delays-overcome}."
+    2: "The producers struggled with assorted delays before this movie even got started, {production-delays-overcome}."
+    3: "The movie was delayed and bogged down by budget problems, {production-delays-overcome}."
+    4: "There were apparently issues with ownership of the screenplay and production had to hault until the legal team gave the green light."
+    5: "There was a long delay before production started, {production-delays-overcome}."
+    6: "I understand that production stopped for months while a legal battle was held by the studio, {production-delays-overcome}"
+    7: "It seems that production was stopped a number of times while {director} battled with the production studio."
+
+production-delays-overcome:
+    0: "but they were overcome, mostly due to {director}'s bloody mindedness"
+    1: "but everyone persevered and managed to keep things moving"
+    2: "but production continued and the movie got off the ground"
+    3: "but the director soldiered on to keep the movie alive"
+    4: "but somehow the movie was finished almost on time"
+    5: "and incredibly the movie was finished - and close to budget too"
+    6: "but impressively the movie was completed before running out of budget"

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <title>{% block title %}Raviews - Random Reviews{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+            {% stylesheets
+                '@OffwhiteRaviewBundle/Resources/public/css/*'
+                output='css/raviews.css'
+            %}
+                <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
+            {% endstylesheets %}
+
+        {% endblock %}
+
+    </head>
+    <body>
+
+    <div id="pageSpring">
+        <section id="page" class="scFlat">
+
+            <div class="pageRibbon">
+                <div id="pageRibbonSC" class="shadowCaster scFlat"></div>
+            </div>
+
+
+            <header id="titleBar">
+                <div id="titleBarSC" class="shadowCaster scDown"></div>
+                <div id="titleBarRibbonSC" class="shadowCaster scFlat"></div>
+                <hgroup>
+                    <h1>{% block page_title %}<a href="{{ path('offwhite_raview_homepage') }}">Random Reviews</a>{% endblock %}</h1>
+                </hgroup>
+
+                {{ render(controller( 'OffwhiteRaviewBundle:Search:renderForm', {'queryString': queryString | default("")} )) }}
+
+            </header>
+
+            <section id="main">
+                {% block body %}{% endblock %}
+            </section>
+
+            <footer>
+                {% block footer %}
+                    A Work of Fiction - <a href="https://github.com/offwhite" target="_blank">offwhite</a> &copy; {{ "now"|date("Y") }}
+                {% endblock %}
+            </footer>
+        </section>
+
+
+    </div>
+    </body>
+</html>

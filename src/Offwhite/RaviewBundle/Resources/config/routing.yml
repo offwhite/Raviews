@@ -1,0 +1,26 @@
+offwhite_raview_homepage:
+    pattern:  /
+    defaults: { _controller: OffwhiteRaviewBundle:Homepage:index }
+    requirements:
+            _method:  GET
+
+offwhite_raview_searchResults:
+    pattern:  /search
+    defaults: { _controller: OffwhiteRaviewBundle:Search:search }
+    requirements:
+            _method:  GET|POST
+
+offwhite_raview_movie:
+    pattern:  /movie/{id}/{slug}
+    defaults: { _controller: OffwhiteRaviewBundle:Movie:show }
+    requirements:
+            _method:  GET
+            id: \d+
+
+offwhite_raview_generatorPreview:
+    pattern:  /preview/{movieId}/{foundationId}
+    defaults: { _controller: OffwhiteRaviewBundle:Preview:show }
+    requirements:
+            _method:  GET
+            movieId: \d+
+            foundationId: \d+

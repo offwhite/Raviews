@@ -1,0 +1,4 @@
+offwhite_raview:
+    resource: "@OffwhiteRaviewBundle/Resources/config/routing.yml"
+    prefix:   /
+

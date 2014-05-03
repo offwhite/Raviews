@@ -1,0 +1,138 @@
+
+# eg. This movie is {adjectives}.
+# eg. Foo's {adjectives} performance was the least of this movies problems.
+
+adjectives:
+    0: "{adjectives-poor}"
+    1: "{adjectives-good}"
+
+adjectives-middle-to-good:
+    0: "{adjectives-middling}"
+    1: "{adjectives-good}"
+
+adjectives-poor:
+    0:  "terrible"
+    1:  "horrible"
+    2:  "awful"
+    3:  "poor"
+    4: "disappointing"
+    5: "bad"
+
+adjectives-middling:
+    0: "reasonable"
+    1: "middling"
+    2: "passable"
+    3: "vaguely average"
+    4: "bearable"
+    5: "middle-of-the-road"
+    6: "hum drum"
+
+adjectives-good:
+    0:  "awesome"
+    1:  "totally awesome"
+    2:  "surprisingly good"
+    3:  "damn good"
+    4:  "very good"
+    5:  "brilliant"
+    6:  "quietly brilliant"
+    7:  "heartwarmingly elegant"
+    8:  "graceful"
+    9: "quietly dignified"
+    10: "beautiful"
+    11: "wonderful"
+    12: "good"
+    13: "strong"
+
+adjectives-character:
+    0:  "{adjectives-character_101}, {adjectives-character_102}"
+    1:  "retired"
+    2:  "down at heels"
+    3:  "drinking"
+    4:  "drunk"
+    5:  "bubbly"
+    6:  "violent"
+    7:  "blind"
+    8:  "mad"
+    9:  "charismatic"
+    10: "perpetually scared"
+    11: "heavily overweight"
+    12: "confused"
+    13: "drug addicted"
+    14: "depressed"
+    15: "womanising"
+    16: "mentally unstable"
+    17: "mildly aspiring"
+    18: "dishevelled"
+    19: "gun obsessed"
+    20: "deranged"
+    21: "racist"
+    22: "frequently grumpy"
+    23: "slowly aging"
+    24: "laughable"
+    25: "lovable"
+
+adjectives-confused:
+    0: "baffled"
+    1: "confused"
+    2: "perplexed"
+    3: "bemused"
+    4: "bewildered"
+
+adjectives-mistake-genius:
+    0: "{adjectives-mistake_201}"
+    1: "{adjectives-genius_201}"
+
+adjectives-mistake:
+    0: "mistake"
+    1: "bad idea"
+    2: "miscalculation"
+    3: "befuddled oversight"
+    4: "cock-up"
+    5: "clanger"
+
+adjectives-genius:
+    0: "work of genius"
+    1: "stroke of genius"
+    2: "great idea"
+    3: "good idea"
+    4: "moment of inspiration"
+    5: "moment of clarity"
+
+adjetives-boring:
+    0: "boring"
+    1: "fallow"
+    2: "empty"
+    3: "dull"
+    4: "slack"
+    5: "monotonous"
+
+adjectives-complicated:
+    0: "complicated"
+    1: "difficult"
+    2: "confusing"
+    3: "complex"
+    4: "involved"
+
+adjectives-harder:
+    0: "harder"
+    1: "difficult"
+    2: "arduous"
+    3: "demanding"
+
+# these are just some toggles to add a little variety to snippets
+
+was-wasnt:
+    0: "was"
+    1: "wasn't"
+
+were-werent:
+    0: "were"
+    1: "weren't"
+
+agree-disagree:
+    0: "agree"
+    1: "disagree"
+
+did-didnt:
+    0: "did"
+    1: "didn't"

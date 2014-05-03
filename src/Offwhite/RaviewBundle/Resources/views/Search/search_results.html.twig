@@ -1,0 +1,56 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    {% for result in results %}
+
+        <article class="row" id="movie-{{ result.id }}">
+            <p class="resultNumber">{{ loop.index0 + 1}}</p>
+            <div class="back backColor scDown"></div>
+            <div class="tail frontColor ease"><div class="tailShadow scOffset"></div></div>
+
+            <a href="{{ path('offwhite_raview_movie', { 'id': result.id , 'slug': result.slug } ) }}" class="title frontColor scDown ease">
+                <h3 title="{{ result.title }}">
+                    {{ result.title[:32] }}
+                    {% if result.title|length > 32 %}
+                        ...
+                    {% endif %}
+                    {% if result.year is not null %}
+                         ({{ result.year }})
+                    {% endif %}
+                </h3>
+                <div class="titleArrow frontColor"></div>
+            </a>
+
+            <p class="content">
+                {{ result.overview[:150] }}
+                {% if result.overview|length > 150 %}
+                    ...
+                {% endif %}
+            </p>
+
+            <div class="ribbon frontColor scDown">
+                <p title="Meta Score - percentage of goodness">{{  result.rating }}%</p>
+            </div>
+        </article>
+
+    {% else %}
+        <article class="row movieRow">
+            <p class="resultNumber">0</p>
+            <div class="back backColor scDown"></div>
+            <div class="tail frontColor"><div class="tailShadow scOffset"></div></div>
+
+            <div class="title frontColor scDown ease">
+                <h3>None Found</h3>
+                <div class="titleArrow frontColor"></div>
+            </div>
+            <p class="content">
+                There were no movies found with that title. try using more words. The right words.
+            </p>
+
+            <div class="ribbon frontColor scDown">
+            </div>
+        </article>
+    {% endfor %}
+
+{% endblock %}

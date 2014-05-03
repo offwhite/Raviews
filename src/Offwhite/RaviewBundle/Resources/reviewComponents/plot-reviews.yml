@@ -1,0 +1,73 @@
+
+# this segment focuses on the writing and story arch
+
+plot-reviews-good:
+    0: "{plot-arc-good} {plot-endings-good}"
+
+plot-reviews-poor:
+    0: "{plot-arc-poor} {plot-endings-poor}"
+
+plot-arc-good:
+    0: "Overall the plot was {adjectives-middling_101}. There wasn't too much fat to lose and I was invested in all the characters."
+    1: "While some areas of the {title} screenplay was {adjectives-good_101}, some just left me {adjectives-confused_101} however."
+    2: "If you take the setup with a large pinch of salt, there is enjoyment to be found in the storyline."
+    3: "{title} has a plot that was, on the whole, {adjectives-middle-to-good_01}. Some of the earlier contrivances are {adjectives-poor_101} however."
+    4: "The writer didn't do a {adjectives-good_101} job, but the screenplay did at least make sense. Surprisingly though, {character_01}'s  {characters-journey-good_101}."
+    5: "{title} has a {adjectives-good_101} story, but was spoiled by {adjectives-poor_101} dialogue, I found however, that {character_01}'s  {characters-journey-good_101}."
+    6: "While you wouldn't describe this as {good-writer_101}, the screenplay isn't {adjectives-poor_101}."
+    7: "{good-writer_101} it is not, but it does climb to '{adjectives-middling_101}' at times. {character_01}'s  {characters-journey-good_101} at times."
+
+plot-arc-poor:
+    0: "The screenplay for {title} was {adjectives-poor_101}. One {adjectives-poor_102} story arc after another."
+    1: "I guess there was a writer involved with this production at some point."
+    2: "The screenplay is {adjectives-middling_123} at times and simply {adjectives-confused_123} at other times. "
+    3: "I understand that the writer was replaced once {director} got hold of the screenplay. Which was a mistake I think."
+    4: "A {adjectives-middling_101} screenplay that left me feeling not so much {adjectives-confused_101} as indifferent. "
+    5: "{good-writer_101} couldn't hold a match to the screenplay. I found though that {character_01}'s  {characters-journey-poor_101}."
+    6: "A {adjectives-middling_119} idea has been inflated to a {runtime} minute screenplay that {was-wasnt} very successful."
+    7: "A strong start to the screenplay goes consistently down hill, reaching a nadir by the end of the third reel - don't look for much sense in the plot for {title}."
+
+plot-endings-good:
+    0: "By the time the credits rolled, all loose ends had been neatly cleared up"
+    1: "I was satisfied by the conclusion, nothing jarred for me and I thought it all came together in a {adjectives-good_102} way."
+    2: "There were some {adjetives-boring_101} periods though everything was pretty neat by the end."
+    3: "I also thought the end was well thought out."
+    4: "The final scene was actually kind of {adjectives-good_107}."
+    5: "By the time the credits rolled I may have been asleep."
+    6: "The final scene was simply {adjectives-good_107}."
+    7: "The final scene may have been  {adjectives-middling_106}, but it was quite fun."
+    8: "{plot-endings-poor_101}"
+
+plot-endings-poor:
+    0: "Unfortunately, nothing after the third quarter really makes much difference to the plot, so you could probably leave after that."
+    1: "The ending was {adjectives-poor_101} at best, which is a shame, I thought it was looking {adjectives-middling_101} at the beginning of the reel."
+    2: "I did however think the end was poorly thought out."
+    3: "The conclusion wasn't clear enough for me"
+    4: "The final scene was simply {adjectives-poor_107}."
+    5: "A {adjetives-boring_106} final secene left me {adjectives-confused_106}."
+    6: "The ending was {adjectives-poor_104}, I was actually left quite {adjectives-confused_107}."
+    7: "The end of the movie wasn't {adjectives-poor_106}, but it wasn't {adjectives-good_106} either."
+    8: "{plot-endings-good_101}"
+
+characters-journey-good:
+    0: "journey was one to which I could and did empathise"
+    1: "story was actually interesting"
+    2: "journey would have had less meaning if the character wasn't so likable"
+    3: "journey was balanced and quite elegant"
+
+characters-journey-poor:
+    0: "journey was emotionless and pointless"
+    1: "journey was kind of pointless"
+    2: "path through the movie seemed to be utterly without meaning"
+    3: "journey at least made me laugh, though i'm not sure it was ment to"
+    4: "journey probably had meaning but i simply didn't care"
+    5: "story would have had meaning if the character was in any way likable"
+
+good-writer:
+    0: "Shakespeare"
+    1: "Dickens"
+    2: "Isaac Asimov"
+    3: "Homer"
+    4: "Coleridge"
+    5: "Wordsworth"
+    6: "Alan Moore"

@@ -1,0 +1,63 @@
+
+# this section is about the director and what he did with the cast/story.
+
+director-reviews:
+    0: "{director-reviews-good}"
+    1: "{director-reviews-poor}"
+
+director-reviews-good:
+    0: "{director} did a {adjectives-good_101} job with what was to hand. There was however something of a battle with {studio-participation_101}."
+    2: "Production was apparently made {adjectives-harder_102} by {studio-participation_101}."
+    3: "{director} endured {studio-participation_101} but didn't let it completely ruin the movie."
+    4: "{director} overcame {studio-participation_103} and kept going to make a {adjectives-good_110} movie."
+    5: "The director manages to take all the elements and make something very interesting."
+    6: ""
+
+director-reviews-poor:
+    0: "{director} tries to turn this {adjectives-poor_101} production into something {adjectives-good_103} with only '{adjectives-middling_101}' success."
+    1: "Production was apparently made {adjectives-harder_102} by {studio-participation_101}."
+    2: "The director clearly struggled to understand the screenplay, it makes no sense in the final production."
+    3: "I understand the directors artistic vision was eventually worn down by {studio-participation_123}."
+
+studio-participation:
+    0: "the studio meddling with everything from the title to the color {director-review-clothes_101} {character_03} {was-wasnt_109} wearing in the {director-review-scene}"
+    1: "the distributors wanting to cut even the most mild violence"
+    2: "the studio pushing for a '{certificates_101}' certificate at the cost of any kind of artistic integrity"
+    3: "the studio withdrawing much of the budget"
+    4: "the distributors trying to insist on an A-list cast"
+    5: "the studio controlling the screenplay"
+    6: "the studio basically trying to direct this movie from the get go"
+    7: "{actor_01} wanting frequent re-writes to make {character_01} more impressive"
+    8: "{actor_01}'s ego"
+    9: "{actor_01}'s total lack of investment in the project"
+    10: "one of the producers wanting to cut the {director-review-scene}"
+    11: "{actor_03} refusing to appear in the {director-review-scene} which was resolved by lawyers I think"
+    12: "{actor_02} insisting on a complete rewrite of the {director-review-scene} which stopped production for a while"
+    13: "the studio apparently wanting to turn the movie into a half soft-core porno"
+    14: "the studio trying to make the movie a thinly veiled anti-christian propaganda piece"
+    15: "the studio wanting to make the movie a christian propaganda advert"
+    16: "the studio trying to undermine creativity for product placement."
+
+certificates:
+    0: "U"
+    1: "PG"
+    2: "12"
+    3: "15"
+    4: "18"
+
+director-review-clothes:
+    0: "socks"
+    1: "hat"
+    2: "shoes"
+    3: "pants"
+    4: "gloves"
+    5: "lipstick"
+    6: "contact lenses"
+
+director-review-scene:
+    0: "first scene"
+    1: "second scene"
+    2: "third scene"
+    3: "last scene"
+    4: "final scene"
+    5: "climatic scene"

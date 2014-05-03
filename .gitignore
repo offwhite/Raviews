@@ -1,0 +1,13 @@
+web/bundles/
+app/bootstrap.php.cache
+app/cache/*
+app/logs/*
+build/
+/vendor
+composer.phar
+.idea
+app/config/parameters.yml
+app/config/local*.yml
+app/Offwhite/RaviewBundle/Resources/config/parameters.yml
+bin
+cache.properties
