@@ -1,23 +1,22 @@
-Raviews - Makes up Reviews
-==========================
+# Raviews - Makes up Reviews
 
-About
------
+## Description
 
+    A searchable database of randomly generated movie reviews.
 
-Proposal
---------
+## Installing
 
-search for film
-* try database find by title
-    * if found - display
-    * else - use imdb api to search
-        * if found - generate a review, save and return
-        * else return not found page
-* provide Plus and Minus buttons - too many minus votes removes the raview
+    curl -s https://getcomposer.org/installer | php  // you might need curl -s https://getcomposer.org/installer | sudo php
+    php composer.phar install
 
-* movie page:
+    cp app/config/parameters.yml.dist app/config/parameters.yml
 
+    // update database details:
+    vi app/config/parameters.yml
+
+    php app/console doctrine:database:create
+    php app/console doctrine:migrations:migrate
+    php app/console db:update
 
 current todo:
 
@@ -30,5 +29,5 @@ current todo:
 [y] add movie title to url
 [x] full text searching for movie by title
 [ ] sort out a 404 page
-[ ] add cast to movie entity
+[y] add cast to movie entity
 

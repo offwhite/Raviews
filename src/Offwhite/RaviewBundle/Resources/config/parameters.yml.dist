@@ -1,2 +1,3 @@
 parameters:
-    api_key: yourTMDBapiKeyGoesHere
+    tmdb.api_key: yourTMDBapiKeyGoesHere
+    reviewGenerator.componentPath: %kernel.root_dir%/../src/Offwhite/RaviewBundle/Resources/reviewComponents
