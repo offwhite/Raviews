@@ -2,8 +2,8 @@
 # we're aiming for about 30 reviews before any noticeable repeats.
 
 foundations:
-    0: "0: {plot-reviews-poor}<br />{director-reviews-poor}<br />{cast-reviews-poor}<br />{conclusions-poor}<br /><br />{reviewers-name}" # 0% - 20%
-    1: "1: {director-reviews-poor}<br />{cast-reviews-poor}<br />{plot-reviews-poor}<br />{conclusions-poor}<br /><br />{reviewers-name}" # 20% - 40%
-    2: "2: {director-reviews}<br />{plot-reviews-poor}<br />{cast-reviews-good}<br />{conclusions-good}<br /><br />{reviewers-name}" # 40% - 60%
-    3: "3: {plot-reviews-good}<br />{director-reviews-good}<br />{cast-reviews-poor}<br />{conclusions-good}<br /><br />{reviewers-name}" # 60% - 80%
-    4: "4: {plot-reviews-good}<br />{director-reviews-good}<br />{cast-reviews-good}<br />{conclusions-good}<br /><br />{reviewers-name}" # 80% - 100%
+    0: "{plot-reviews-poor}<br />{director-reviews-poor}<br />{cast-reviews-poor}<br />{conclusions-poor}<br /><br />{reviewers-name}" # 0% - 20%
+    1: "{director-reviews-poor}<br />{cast-reviews-poor}<br />{plot-reviews-poor}<br />{conclusions-poor}<br /><br />{reviewers-name}" # 20% - 40%
+    2: "{director-reviews}<br />{plot-reviews-poor}<br />{cast-reviews-good}<br />{conclusions-good}<br /><br />{reviewers-name}" # 40% - 60%
+    3: "{plot-reviews-good}<br />{director-reviews-good}<br />{cast-reviews-poor}<br />{conclusions-good}<br /><br />{reviewers-name}" # 60% - 80%
+    4: "{plot-reviews-good}<br />{director-reviews-good}<br />{cast-reviews-good}<br />{conclusions-good}<br /><br />{reviewers-name}" # 80% - 100%

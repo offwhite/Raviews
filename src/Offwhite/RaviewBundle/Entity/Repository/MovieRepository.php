@@ -49,7 +49,7 @@ class MovieRepository extends EntityRepository
             ->getQuery()
             ->getResult();
 
-        if (!shuffle($latest)) {
+        if (!shuffle($latest) || count($latest) < 1) {
             return false;
         }
 

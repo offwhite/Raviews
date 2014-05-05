@@ -14,14 +14,13 @@
             Here you will find movie reviews that are totally random
             and should in no way be taken as a reflection of the movie
             in question.<br />
-            Here's an example:
         </p>
 
         <div class="ribbon frontColor scDown"></div>
     </article>
 
 
-
+    {%  if movie is defined %}}
 
     <article class="row homeRow">
         <p class="resultNumber">1</p>
@@ -48,4 +47,7 @@
             <p title="Meta Score - percentage of goodness">{{ randomMovie.rating }}</p>
         </div>
     </article>
+
+    {% endif %}
+
 {% endblock %}
