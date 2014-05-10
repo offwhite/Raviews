@@ -38,7 +38,7 @@ class Tmdb{
      * @param $query
      * @return array|bool
      */
-    Public function searchByTitle($query)
+    public function searchByTitle($query)
     {
 
         $moviesArray = array();
@@ -57,7 +57,10 @@ class Tmdb{
             $apiMovie = ($this->apiCall($result->id));
 
             // generate an entity
-            $moviesArray[] = $this->createEntity($apiMovie);
+            $movie = $this->createEntity($apiMovie);
+            if (false !== $movie) {
+                $moviesArray[] = $movie;
+            }
         }
 
         $this->em->flush();
@@ -74,8 +77,29 @@ class Tmdb{
      */
     Private function createEntity($apiMovie)
     {
+        /*
+         * Imdbid's are unique, return db entity if found
+         * this increases db load but guarantees imdbId's are unique without generating an exception
+         */
+        $movie = $this->em->getRepository('OffwhiteRaviewBundle:Movie')->loadByImdbId($apiMovie->imdb_id);
+
+        if (null !== $movie) {
+            return $movie;
+        }
+
         // parse release date
         $releaseDate = isset($apiMovie->release_date) ? explode('-',$apiMovie->release_date) : array(null);
+
+        // we don't want to keep this movie if there is no cast
+        // or it is not released yet
+        // or it has no imdb id
+        if (
+                count($apiMovie->credits->cast) < 2
+                || $releaseDate[0] > \idate('Y')
+                || !isset($apiMovie->imdb_id)
+            ) {
+            return false;
+        }
 
         // parse director
         $director = null;
@@ -96,7 +120,7 @@ class Tmdb{
         }
 
         // generate the rating
-        $rating = rand(0, 100);
+        $rating = rand(0, 99);
 
         $movie = new Movie();
         $movie->setTitle($apiMovie->original_title);
@@ -118,6 +142,7 @@ class Tmdb{
         $movie->setRaview($review);
 
         $this->em->persist($movie);
+
 
         return $movie;
     }

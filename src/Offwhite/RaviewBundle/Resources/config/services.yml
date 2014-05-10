@@ -1,7 +1,7 @@
 services:
     offwhite.reviewGenerator:
-        class:      Offwhite\RaviewBundle\Services\reviewGenerator
-        arguments: [%reviewGenerator.componentPath%]
+        class:      Offwhite\RaviewBundle\Services\ReviewGenerator
+        arguments: [%reviewGenerator.componentPath%, @logger]
     offwhite.tmdb:
         class:      Offwhite\RaviewBundle\Services\Tmdb
         arguments: [@doctrine.orm.entity_manager, %tmdb.api_key%, @offwhite.reviewGenerator]

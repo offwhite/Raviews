@@ -20,7 +20,7 @@
     </article>
 
 
-    {%  if movie is defined %}}
+    {%  if randomMovie != false %}
 
     <article class="row homeRow">
         <p class="resultNumber">1</p>
@@ -40,11 +40,11 @@
         <image class="moviePoster" width=165 src="http://image.tmdb.org/t/p/w300{{ randomMovie.imagePoster }}" />
 
         <p class="content">
-            {{ randomMovie.raview }}
+            {{ randomMovie.raview[:200] | raw }}...
         </p>
 
         <div class="ribbon frontColor scDown">
-            <p title="Meta Score - percentage of goodness">{{ randomMovie.rating }}</p>
+            <p title="Meta Score - percentage of goodness">{{ randomMovie.rating }}%</p>
         </div>
     </article>
 

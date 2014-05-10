@@ -7,11 +7,12 @@ director-reviews:
 
 director-reviews-good:
     0: "{director} did a {adjectives-good_101} job with what was to hand. There was however something of a battle with {studio-participation_101}."
+    1: ""
     2: "Production was apparently made {adjectives-harder_102} by {studio-participation_101}."
     3: "{director} endured {studio-participation_101} but didn't let it completely ruin the movie."
     4: "{director} overcame {studio-participation_103} and kept going to make a {adjectives-good_110} movie."
     5: "The director manages to take all the elements and make something very interesting."
-    6: ""
+    6: "{director} latest is a success in my eyes, even thought {studio-participation_101}."
 
 director-reviews-poor:
     0: "{director} tries to turn this {adjectives-poor_101} production into something {adjectives-good_103} with only '{adjectives-middling_101}' success."

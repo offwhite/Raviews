@@ -18,6 +18,9 @@ class MovieTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('jaws-3d', $movie->generateSlug('JAWS 3D   '));
     }
 
+    /**
+     * Check movie entities
+      */
     public function testSetTitle()
     {
         $movie = new Movie();

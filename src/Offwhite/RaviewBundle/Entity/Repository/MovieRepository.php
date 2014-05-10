@@ -35,12 +35,22 @@ class MovieRepository extends EntityRepository
             ->getResult();
     }
 
-    /*
+    /**
+     * @param $imdbId
+     * @return null|object
+     */
+    public function loadByImdbId($imdbId)
+    {
+        return $this->findOneBy(array('imdbId' => $imdbId));
+    }
+
+    /**
      * load a random movie from the latest 100 rows added
      *
      * @return \Movie || false
      */
-    public function loadRandomMovie(){
+    public function loadRandomMovie()
+    {
 
         $latest = $this->createQueryBuilder('m')
             ->select('m')

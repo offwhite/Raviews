@@ -15,22 +15,25 @@ class ReviewGenerator{
 
     private $availablePlaceholders = array();
 
-    private $placeholdersBackup;
-
     private $usedPlaceholders;
 
     private $nonRandomTypes;
 
+    private $logger;
+
     /**
      * @param $pathToComponents
      */
-    public function __construct($pathToComponents)
+    public function __construct($pathToComponents, $logger)
     {
         // load all components from yml files
         $this->loadComponents($pathToComponents);
 
         // define some components as ordered rather than random
         $this->nonRandomTypes = array('actor','character');
+
+        $this->logger = $logger;
+
     }
 
 
@@ -58,8 +61,6 @@ class ReviewGenerator{
             }
         }
 
-        $this->placeholdersBackup = $this->availablePlaceholders;
-
         return $this->availablePlaceholders;
     }
 
@@ -77,17 +78,17 @@ class ReviewGenerator{
         // reset used placeholders for each movie
         $this->usedPlaceholders = array();
 
-        // reset available placeholders
-        $this->availablePlaceholders = $this->placeholdersBackup;
-
         // set movie specific placeholders
         $this->setMoviePlaceholderValues($movie);
 
-        // get the rating an define a foundation from it
-        $foundationIndex = floor($movie->getRating() / 20);
+        $numFoundations = count($this->availablePlaceholders['foundations']);
+
+        // calculate the foundation ratio - how many % per foundation
+        // eg. 2 foundations = 50% ratio
+        $foundationIndex = floor($movie->getRating() / (100 / $numFoundations) );
 
         // select a random foundation if we haven't got one or if it's too high
-        if (null === $foundationIndex || $foundationIndex > count($this->availablePlaceholders['foundations'])) {
+        if (null === $foundationIndex || $foundationIndex > $numFoundations) {
             $foundationIndex = rand( 0, ( count($this->availablePlaceholders['foundations']) - 1) );
         }
 
@@ -194,6 +195,7 @@ class ReviewGenerator{
          * check we have a component type available
          */
         if (!isset($this->availablePlaceholders[$type])){
+            $this->logger->error('ReviewGenerator ERROR: placeholder type not found: '.$type);
             return $placeholder;
         }
 
@@ -216,6 +218,8 @@ class ReviewGenerator{
             $value = $this->availablePlaceholders[$type][$arrIndex];
 
         }else{
+            $this->logger->error('ReviewGenerator ERROR: Unable to process placeholder: Index: '.$arrIndex.' not found in '.$type);
+            // this placeholder isn't able to be processed
             $value = $placeholder;
         }
 
