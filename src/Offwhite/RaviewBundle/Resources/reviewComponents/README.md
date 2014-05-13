@@ -13,6 +13,8 @@ For example:
     a movie with a rating of 50 will start with foundation[5]
     a movie with a rating of 99 will start with foundation[9]
 
+Therefor foundations that generate better reviews should have a higher index in the foundation array
+
 ## Processing
 
 Any placeholders found in foundations will require a corresponding array
@@ -23,7 +25,7 @@ If you write a new foundation entry which has a {hats_01} placeholder
 you must create a hats.yml containing a hats array:
 
 
-# src/Ofwhite/RaviewBundle/Resources/reviewComponents/hats.yml
+### src/Offwhite/RaviewBundle/Resources/reviewComponents/hats.yml
 
     hats:
         0: "Top hat"
@@ -33,7 +35,7 @@ you must create a hats.yml containing a hats array:
 
 ### NOTE:
 
-reserved placeholder type names are:
+Reserved placeholder type names are:
 
     director
     actor

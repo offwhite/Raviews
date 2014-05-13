@@ -63,22 +63,16 @@ class SearchController extends Controller
 
         }else{
 
-            $em = $this->getDoctrine()->getManager();
+            /*
+             * We don't know what TMDB records we don't have yet
+             * So each search needs to query the TMDB API and be parsed by the TMDB service
+             */
 
             $queryString = $form->getData()->getTitle();
 
-            $results = $em->getRepository('OffwhiteRaviewBundle:Movie')
-                ->searchByTitle($queryString, 10);
+            $tmdb = $this->get('offwhite.tmdb');
 
-            /*
-             * Try search through tmdb api if no results
-             */
-            if(count($results) < 1) {
-
-                $tmdb = $this->get('offwhite.tmdb');
-
-                $results = $tmdb->searchByTitle($queryString);
-            }
+            $results = $tmdb->searchByTitle($queryString);
 
             /*
              * render results, include the query string in the template render

@@ -7,11 +7,11 @@
 ## Installing
 
     curl -s https://getcomposer.org/installer | php
-    php composer.phar install
+    php composer.phar update
 
     cp app/config/parameters.yml.dist app/config/parameters.yml
 
-    // update your database details:
+    // If not prompted by composer update: update your database details:
     vi app/config/parameters.yml
 
     php app/console doctrine:database:create
@@ -20,6 +20,4 @@
 
 current todo:
 
-    [ ] get extra search results by ajax and add a "more results found - load now?" button
     [ ] sort out a 404 page
-
