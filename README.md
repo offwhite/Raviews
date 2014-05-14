@@ -6,7 +6,7 @@
 
 ### Live example
 
-    http://raviews.offwhitedesign.co.uk/
+    [raviews.offwhitedesign.co.uk][http://raviews.offwhitedesign.co.uk/]
 
 ## Installing
 
