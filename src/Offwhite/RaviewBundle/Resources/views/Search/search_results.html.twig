@@ -11,8 +11,8 @@
 
             <a href="{{ path('offwhite_raview_movie', { 'id': result.id , 'slug': result.slug } ) }}" class="title frontColor scDown ease">
                 <h3 title="{{ result.title }}">
-                    {{ result.title[:32] }}
-                    {% if result.title|length > 32 %}
+                    {{ result.title[:30] }}
+                    {% if result.title|length > 30 %}
                         ...
                     {% endif %}
                     {% if result.year is not null %}

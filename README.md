@@ -4,6 +4,10 @@
 
     A searchable database of randomly generated movie reviews.
 
+### Live example
+
+    http://raviews.offwhitedesign.co.uk/
+
 ## Installing
 
     curl -s https://getcomposer.org/installer | php
