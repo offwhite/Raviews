@@ -232,29 +232,29 @@ body a{
 
 /* ====  Available row-ribbon colors ==== */
 
-#main .row:nth-child(6n+1) .frontColor {    background-color: #5eaec3;}
-#main .row:nth-child(6n+1) .backColor {     background-color: #468494;}
-#main .row:nth-child(6n+1) .resultNumber { color: #5eaec3; }
+#main .row:nth-child(6n+1) .frontColor,     #main .row .frontColor {    background-color: #5eaec3;}
+#main .row:nth-child(6n+1) .backColor,      #main .row .backColor {     background-color: #468494;}
+#main .row:nth-child(6n+1) .resultNumber,   #main .row .resultNumber {  color: #5eaec3; }
 
 #main .row:nth-child(6n+2) .frontColor {    background-color: #f49f40;}
-#main .row:nth-child(6n+2) .backColor {    background-color: #bf7e30;}
-#main .row:nth-child(6n+2) .resultNumber { color: #f49f40; }
+#main .row:nth-child(6n+2) .backColor {     background-color: #bf7e30;}
+#main .row:nth-child(6n+2) .resultNumber {  color: #f49f40; }
 
 #main .row:nth-child(6n+3) .frontColor {    background-color: #4e7da0;}
 #main .row:nth-child(6n+3) .backColor {     background-color: #3b5d72;}
-#main .row:nth-child(6n+3) .resultNumber { color: #4e7da0; }
+#main .row:nth-child(6n+3) .resultNumber {  color: #4e7da0; }
 
 #main .row:nth-child(6n+4) .frontColor {    background-color: #ef6c3f;}
-#main .row:nth-child(6n+4) .backColor {    background-color: #b9532d;}
-#main .row:nth-child(6n+4) .resultNumber { color: #ef6c3f; }
+#main .row:nth-child(6n+4) .backColor {     background-color: #b9532d;}
+#main .row:nth-child(6n+4) .resultNumber {  color: #ef6c3f; }
 
 #main .row:nth-child(6n+5) .frontColor {    background-color: #c83d36;}
 #main .row:nth-child(6n+5) .backColor {     background-color: #a23028;}
-#main .row:nth-child(6n+5) .resultNumber { color: #ef6c3f; }
+#main .row:nth-child(6n+5) .resultNumber {  color: #ef6c3f; }
 
 #main .row:nth-child(6n+6) .frontColor {    background-color: #924c32;}
 #main .row:nth-child(6n+6) .backColor {     background-color: #773d24;}
-#main .row:nth-child(6n+6) .resultNumber { color: #924c32; }
+#main .row:nth-child(6n+6) .resultNumber {  color: #924c32; }
 
 #main .row .title {
     position: absolute;

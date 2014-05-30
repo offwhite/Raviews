@@ -37,9 +37,7 @@
             <header id="titleBar">
                 <div id="titleBarSC" class="shadowCaster scDown"></div>
                 <div id="titleBarRibbonSC" class="shadowCaster scFlat"></div>
-                <hgroup>
-                    <h1>{% block page_title %}<a href="{{ path('offwhite_raview_homepage') }}">Random Reviews</a>{% endblock %}</h1>
-                </hgroup>
+                <h1>{% block page_title %}<a href="{{ path('offwhite_raview_homepage') }}">Random Reviews</a>{% endblock %}</h1>
 
                 {{ render(controller( 'OffwhiteRaviewBundle:Search:renderForm', {'queryString': queryString | default("")} )) }}
 
